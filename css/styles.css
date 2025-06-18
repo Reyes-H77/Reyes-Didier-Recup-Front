@@ -11,17 +11,29 @@ body {
 }
 
 .top-bar {
-  font-size: 14px;
+  display: flex;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
 }
 
 .top-bar .redes {
   background-color: #0d2b5b;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  position: relative;
 }
 
 .top-bar .contacto {
-  background-color: #2680F9; 
-  clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+  background-color: #2680F9;
+  padding-left: 30px; 
+}
+
+.top-bar .redes::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 40px solid transparent;
+  border-right: 40px solid #2680F9;
 }
 
 .navbar {
@@ -78,9 +90,7 @@ body {
   top: 0;
   width: 260px;
   height: 100%;
-  background-color: #2AD297; 
-  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
-  z-index: 0;
+  background: linear-gradient(114deg, #2AD297 90%, white 8%);   
 }
 
 .footer {
