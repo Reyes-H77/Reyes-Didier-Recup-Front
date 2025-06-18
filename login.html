@@ -11,13 +11,15 @@
 </head>
 <body class="d-flex flex-column min-vh-100 bg-light">
 
-  <nav class="navbar navbar-light bg-white shadow-sm">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center fw-semibold" href="index.html">
-        <img src="img/logo.png" alt="Logo Expertobra" height="40" class="me-2"> 
-      </a>
-    </div>
-  </nav>
+<nav class="navbar shadow-sm position-relative custom-navbar">
+  <div class="color-corner"></div>
+  <div class="container position-relative">
+    <a class="navbar-brand d-flex align-items-center fw-semibold text-dark" href="index.html">
+      <img src="img/logo.png" alt="Logo Expertobra" height="40" class="me-2"> 
+    </a>
+  </div>
+</nav>
+
 
   <main class="flex-grow-1 d-flex align-items-center">
     <div class="container">
@@ -27,6 +29,21 @@
             <div class="card-body p-4">
               <h2><i class="bi bi-person-fill"></i> Inicio De Sesion</h2>
 
+                          <div class="form-box">
+              <form>
+                <div class="mb-3">
+                    <label class="form-label">Documento</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" required>
+                </div>
+                <div class="d-grid">
+                 <button type="submit" class="btn btn-yellow">Entrar</button>
+                </div>
+                </form>
+            </div>
 
 
               </form>
