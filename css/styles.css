@@ -54,10 +54,10 @@ body {
   font-weight: bold;
   padding: 10px 20px;
   text-transform: uppercase;
-  width: 220px;        /* Tamaño moderado */
-  display: block;      /* Para que puedas centrarlo */
-  margin: 20px auto;   /* Centrado horizontal y espacio arriba/abajo */
-  border-radius: 8px;  /* Opcional para suavizar bordes */
+  width: 220px;      
+  display: block;      
+  margin: 20px auto;   
+  border-radius: 8px;  
 }
 
 
